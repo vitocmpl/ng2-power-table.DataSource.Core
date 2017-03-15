@@ -1,4 +1,4 @@
-namespace Ng2PowerTable.DataSource.Core
+namespace Ng2YaTable.DataSource.Core
 {
     public class DataSourceRequest
     {

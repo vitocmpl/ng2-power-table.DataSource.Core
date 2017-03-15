@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.ComponentModel;
 
-namespace Ng2PowerTable.DataSource.Core
+namespace Ng2YaTable.DataSource.Core
 {
     public static class ExtensionMethods
     {
