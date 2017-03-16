@@ -4,12 +4,17 @@ ng2-ya-table DataSource Core
 This library contains a collection of server-side helpers for the ng2-ya-table library (https://github.com/vitocmpl/ng2-ya-table). 
 The library is written for the .NET Core applications.
 
-## Installation
-To install this library, add the reference in the project.json dependencies:
 
-```json
-"ng2-ya-table.DataSource.Core": "0.1.0"
-```
+## Installation
+
+You can add this library to your project using [NuGet][nuget]. This is the only method this library is currently distributed unless
+you choose to build your own binaries using source code. Run the following command in the “Package Manager Console”:
+
+    PM> Install-Package ng2-ya-table.DataSource.Core
+    
+Or right click to your project in Visual Studio, choose “Manage NuGet Packages” and search for ‘ng2-ya-table.DataSource.Core’ and click ‘Install’.
+([see NuGet Gallery][nuget-gallery].)
+
 
 ## Example 
 
@@ -27,6 +32,12 @@ public async Task<IActionResult> GetUsers([FromBody]DataSourceRequest parameters
     return Ok(await query.ToDataSourceResult(parameters))
 }
 ```
+
+
+## Further Documentation
+
+See the Demo project for further details; installation, customization and other useful articles will be available soon...
+
 
 ## License
 

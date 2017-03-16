@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -8,7 +7,7 @@ using Ng2YaTable.DataSource.Demo.Models;
 
 namespace Ng2YaTable.DataSource.Demo.Repos
 {
-    public class UsersRepository
+    public class DemoRepository
     {
         private JArray data = null;
 

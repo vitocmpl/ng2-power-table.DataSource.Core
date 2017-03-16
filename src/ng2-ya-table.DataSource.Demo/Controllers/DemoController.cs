@@ -8,19 +8,20 @@ using Ng2YaTable.DataSource.Demo.Repos;
 namespace Ng2YaTable.DataSource.Demo.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class DemoController : Controller
     {
-        private UsersRepository usersRepo = null;
-        public ValuesController(UsersRepository usersRepo)
+        private DemoRepository repo = null;
+
+        public DemoController(DemoRepository repo)
         {
-            this.usersRepo = usersRepo;
+            this.repo = repo;
         }
 
         [HttpPost]
         [ProducesResponseType(typeof(DataSourceResult<User>), 200)]
         public async Task<DataSourceResult<User>> Get([FromBody]DataSourceRequest parameters)
         {
-            var query = from u in await usersRepo.GetUsers()
+            var query = from u in await repo.GetUsers()
                         select u;
 
             return await query.ToDataSourceResult(parameters);

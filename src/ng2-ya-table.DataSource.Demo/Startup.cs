@@ -29,7 +29,7 @@ namespace Ng2YaTable.DataSource.Demo
             // Add framework services.
             services.AddMvc();
 
-            services.AddSingleton(typeof(UsersRepository));
+            services.AddSingleton(typeof(DemoRepository));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
