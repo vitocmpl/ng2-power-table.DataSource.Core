@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Version>0.2.0</Version>
+    <Authors>Vito Campanelli</Authors>
+    <Company />
+    <Description>Server-side utils for ng2-ya-table</Description>
+    <PackageProjectUrl>https://github.com/vitocmpl/ng2-ya-table.DataSource.Core</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/vitocmpl/ng2-ya-table.DataSource.Core/blob/master/LICENSE</PackageLicenseUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="_build nuget - Copia.cmd" />
+    <None Remove="_build nuget.cmd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.5" />
+  </ItemGroup>
+
+</Project>

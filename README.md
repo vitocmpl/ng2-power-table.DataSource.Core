@@ -2,7 +2,6 @@ ng2-ya-table DataSource Core
 ===============================
 
 This library contains a collection of server-side helpers for the ng2-ya-table library (https://github.com/vitocmpl/ng2-ya-table). 
-The library is written for the .NET Core applications.
 
 
 ## Installation
