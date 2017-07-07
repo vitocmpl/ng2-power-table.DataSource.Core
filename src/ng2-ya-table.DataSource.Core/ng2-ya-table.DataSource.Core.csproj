@@ -14,8 +14,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="_build nuget - Copia.cmd" />
-    <None Remove="_build nuget.cmd" />
   </ItemGroup>
 
   <ItemGroup>
